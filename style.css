@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+}
+
+/*Navbar*/
+.navbar {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  height: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  width: 80vh;
+  justify-content: space-around;
+  margin: auto;
+  gap: 75px;
+}
+
+.navbar li {
+  list-style: none;
+}
+.navbar a:hover {
+  background-color: rgba(255, 0, 0, 0.322);
+  border-radius: 40px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  letter-spacing: 3.5px;
+  padding: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-items: end;
+  gap: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.icons img {
+  height: 35px;
+}
+
+/*main background and translucent tile*/
+.background {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1fr 0.5fr 0.5fr;
+  height: 800px;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tile {
+  height: 280px;
+  width: 650px;
+  background-color: rgba(255, 0, 0, 0.349);
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/*tile text*/
+.tile h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: white;
+  padding: 45px 30px 10px 45px;
+  letter-spacing: 2px;
+}
+
+.tile p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  font-size: 1.1rem;
+  color: white;
+  padding: 0px 45px 45px 45px;
+  letter-spacing: 2px;
+}
+
+/*Cards and gradient background*/
+
+.gradient {
+  background-image: linear-gradient(to right, rgb(230, 13, 201), yellow);
+  display: grid;
+  justify-content: space-around;
+  place-items: center;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 0.3fr 1fr 0.2fr 0.2fr;
+  column-gap: 20px;
+}
+.dish-box {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 400px;
+  gap: 10px;
+  background-color: white;
+  border-radius: 0 50px 0 50px;
+}
+.burger {
+  grid-column: 2;
+  grid-row: 2;
+}
+.pizza {
+  grid-column: 5;
+  grid-row: 2;
+}
+.pasta {
+  grid-column: 8;
+  grid-row: 2;
+}
+
+/*card text*/
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+  top: 25px;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+}
+
+/*card image*/
+.dish-box img {
+  position: relative;
+  height: 350px;
+  width: 350px;
+  left: 25px;
+  top: 25px;
+  border-radius: 0 50px 0 0;
+  object-fit: cover;
+}
+
+/*order now buttons*/
+.btn {
+  height: 40px;
+  width: 120px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.377);
+  color: rgba(0, 0, 0, 0.493);
+  border: none;
+  grid-column: 5;
+  grid-row: 4;
+  position: relative;
+}
+.order-now {
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  grid-column: 5;
+  grid-row: 1;
+}
+
+/* Footer styles */
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 0;
+  height: 70px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container p {
+  margin-top: 20px;
+}
+
+.social-media a {
+  color: #000000;
+  padding: 10px;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+}
+
+.social-media a:hover {
+  background-color: rgba(255, 0, 0, 0.322);
+  border-radius: 40px;
+}
+
+----/*For Mobile Phones*/----
+
+@media only screen and (min-width: 768px)
+{
+    .background { 
+        background-color: black;
+
+    }
+}
+
